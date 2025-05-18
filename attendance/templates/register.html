@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register Face</title>
+  <link rel="stylesheet" href="{% static 'css/register.css'%}" />
+</head>
+<body>
+  <h1>Register Your Face</h1>
+
+  <div id="videoContainer">
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <div id="errorMessage" style="display:none;"></div>
+  </div>
+
+  <div id="instructions">
+    Enter your name and capture your face to register.
+  </div>
+
+  <!-- 👇 Registration Form -->
+  <form id="registerForm">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <button class="btn" type="button" id="startButton">Start Webcam</button><br>
+    <button class="btn" type="button" id="captureButton">Capture & Register</button>
+  </form>
+
+  <script src="{% static 'js/register.js'%}"></script>
+</body>
+</html>

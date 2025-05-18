@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Face Detection</title>
+  <link rel="stylesheet" href="{% static 'css/detect.css' %}" />
+</head>
+<body>
+  <h1>Face Detection & Attendance</h1>
+
+  <div id="videoContainer">
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <div id="errorMessage" style="display:none;"></div>
+  </div>
+
+  <div id="instructions">Click the button below to start webcam and detect faces.</div>
+  <button class="btn" type="button" id="startButton">Start Webcam</button>
+  <button class="btn" type="button" id="detectButton" style="display: none;">Detect Face</button>
+
+  <!-- Confirmation Modal -->
+  <div id="popup" class="modal" style="display: none;">
+    <div class="modal-content">
+      <p id="popupText">Detected: <span id="detectedName"></span></p>
+      <button class="btn" id="confirmButton">Confirm</button>
+      <button class="btn" id="cancelButton">Cancel</button>
+    </div>
+  </div>
+
+  <script src="{% static 'js/detect.js' %}"></script>
+</body>
+</html>

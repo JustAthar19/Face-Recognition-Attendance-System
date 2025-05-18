@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Face Attendance System</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Face Attendance System</h1>
+    <div class="button-container">
+      <a href="/register/" class="btn">Register Face</a>
+      <a href="/detect/" class="btn">Take Attendance</a>
+      <a href="/attendance/" class="btn">View Records</a>
+    </div>
+  </div>
+</body>
+</html>

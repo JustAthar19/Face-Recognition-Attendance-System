@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Records</title>
+    <link rel="stylesheet" href="{% static 'css/attendanceList.css' %}">
+</head>
+<body>
+    <h1>Attendance Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in records %}
+                <tr>
+                    <td>{{ record.name }}</td>
+                    <td>{{ record.local_time|date:"Y-m-d H:i:s" }}</td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="2">No attendance records found.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

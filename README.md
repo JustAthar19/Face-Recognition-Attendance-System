@@ -24,15 +24,15 @@ A web-based face recognition attendance system built with Django, OpenCV, and fa
 - Mark Attendance 
 - Show Attendance Record 
 --- 
-🚧 Work in Progress
+Work in Progress
 This project is actively being developed. Upcoming features include:
-- 🔒 Face liveness detection (anti-spoofing)
-- 👤 Admin dashboard 
-- 📊 Export attendance data to CSV or Excel
-- 📆 Data Filtering
+- Face liveness detection (anti-spoofing)
+- Admin dashboard 
+- Export attendance data to CSV or Excel
+- Data Filtering
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ```bash
 git clone https://github.com/JustAthar19/Face-Recognition-Attendance-System.git

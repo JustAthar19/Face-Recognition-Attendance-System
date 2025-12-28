@@ -1,29 +1,28 @@
-# 🎮 Face Recognition Attendance System (Retro Style)
+# Face Recognition Attendance System (Retro Style)
 
 A web-based face recognition attendance system built with Django, OpenCV, and face_recognition — featuring a retro pixel-art UI with real-time webcam detection and attendance logging.
 
-<!-- ![screenshot](assets/banner.png) -->
 
 ---
-## 🚀 Features
-- ✅ Register faces through webcam
-- ✅ Real-time face detection and recognition
-- ✅ Popup confirmation for marking attendance
-- ✅ Attendance logging with timestamps
+## Features
+-  Register faces through webcam
+-  Real-time face detection and recognition
+-  Popup confirmation for marking attendance
+-  Attendance logging with timestamps
 ---
-## 🛠️ Tech Stack
+## Tech Stack
 - **Backend:** Django (Python)
 - **Frontend:** HTML, CSS, JavaScript
 - **Face Detection:** `face_recognition` (dlib + OpenCV)
 - **Database:** SQLite
 - **Style:** Retro pixel design using [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)
 ---
-## 📸 Screenshots
+## Screenshots
 
-- Register data 📸
-- Face Recognition 📸
-- Mark Attendance 📸
-- Show Attendance Record 📸
+- Register data 
+- Face Recognition 
+- Mark Attendance 
+- Show Attendance Record 
 --- 
 🚧 Work in Progress
 This project is actively being developed. Upcoming features include:
